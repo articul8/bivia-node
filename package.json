@@ -1,0 +1,43 @@
+{
+  "name": "@articul8/bivia",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for the Bivia calibrated decision engine",
+  "author": "Articul8 AI <support@articul8.ai>",
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/articul8/bivia-node.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "bivia",
+    "articul8",
+    "decisions",
+    "ai",
+    "calibrated",
+    "grounding"
+  ],
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
